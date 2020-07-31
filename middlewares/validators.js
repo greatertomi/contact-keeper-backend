@@ -14,3 +14,7 @@ exports.createUserValidation = [
     min: 5
   })
 ];
+
+exports.createContactValidation = [
+  body('name', 'Name is required').not().isEmpty()
+];
